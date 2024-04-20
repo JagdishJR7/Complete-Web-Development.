@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is html forms</h2>
+    <hr>
+    <form action="backend.php">
+        <label for="name"></label>
+
+        <div>
+            Name : <input type="text" Name="myname" id="name" placeholder="name">
+        </div>
+        <br>
+        <div>
+            Roll no : <input type="text" Name="myrollno">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myeamil" placeholder="Email">
+        </div>
+        <br>
+        <br>
+        <div>
+            date :<input type="date" name="mydate" id="">
+        </div>
+        <br>
+        <div>
+            Number : <input type="number" name="mynumber" placeholder="number">
+        </div>
+        <br>
+        <div>
+            Bonas:<input type="number" name="mybonas">
+        </div>
+        <br>
+        <div>
+            Are you eligible: <input type="checkbox" name="myEliggible" checked>
+        </div>
+        <br>
+        <div>
+            Gender : <input type="radio" name="mygender">female<input type="radio" name="mygender">male<input
+                type="radio" name="mygender">other
+        </div>
+        <br>
+        <div>
+            What about yourself <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+        </div>
+        <br>
+        <label for="car">
+            car :<select name="mycar" id="car">
+                <option value="indd">indica</option>
+                <option value="indd">shift</option>
+            </select>
+</label>
+        <br>
+        <br>
+        <div>
+            submit :<input type="submit" value="submit now">
+            Reset now:<input type="reset" name="myresets">
+        </div>
+    </form>
+</body>
+
+</html>

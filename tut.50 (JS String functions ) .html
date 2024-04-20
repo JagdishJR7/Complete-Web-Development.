@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        ul li,
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a string function tutorial :::</h1>
+        <p>For doing the js coding you have to go the the inspect part after the right click and go to the console part
+            where you can see the output of the programs </p>
+    </div>
+
+    <div> 
+    <h2>Let's go to the steps part by which we can see our JS output </h3>
+        <ul>
+            <li>1.) Right click on the layout. </li>
+            <li>2.) Go to the inspect part of the layout .</li>
+            <li>3.) Now go to the concole part !</li>
+        </ul>
+    </div>
+
+    <script>
+        console.log('this is string ');
+
+        var str = "this is heading ";
+        console.log(str);
+
+        // String Functions ::: 
+
+        //1. indexOF : to find the indexes we can use it.  :
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //2. lastindexOF : last index of a function .
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        //3. slice or substring : substring of a string 
+        var substr = str.slice(1, 6);
+        var substr1 = str.substring(1, 6);
+        // slice function can print negative value but substring can not 
+        console.log(substr)
+        console.log(substr1)
+
+        //4. replace function : replaces word .
+        var replacestr = str.replace('this', 'harry');
+        console.log(str)
+        console.log(replacestr)
+
+
+        //5. uppercase and lower case .
+        console.log("This will change it into upper case :", str.toUpperCase());
+        console.log("This will change syntax into lower case :", str.toLocaleLowerCase());
+
+        //6.concat : to Concatenat the string .
+        var newString = str.concat('With New string');
+        console.log(newString);
+
+        //7. remove : To remove whitespaces from text .
+        var strWithWiteSpaces = "    thjhdf         fadfh      aggdafgadf"
+        console.log(strWithWiteSpaces)
+        console.log(strWithWiteSpaces.trim())
+        // trim() funciton will remove the space from first and last side 
+
+        // 8. How to astract character from string   note : not very important 
+        var char2 = str.charAt(2)
+        console.log(char2)
+        // we can also find the code of that character 
+        var char3 = str.charCodeAt(2)
+        console.log(char3)
+
+
+        // 9. Slicing of the string 
+        console.log(str[2])
+        console.log(str[3])
+        console.log(str[8])
+    </script>
+</body>
+
+</html>

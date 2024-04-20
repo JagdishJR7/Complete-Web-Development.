@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math objects</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Math Objrcts:</h1>
+        <ul>
+            <li><h2>The syntax for any Math property is : Math.property</h2></li>
+        </ul>
+    </div>
+
+    <script>
+        // printing the math obects ::: 
+        let m = Math;
+        console.log(m)
+        console.log("The value of math.E is :", Math.E) //Euler's number
+        console.log("The value of math.PI is :", Math.PI) //
+        console.log("The value of math. is :", Math.SQRT1_2) //return the square root of 1/2
+        console.log("The value of math. is :", Math.SQRT2) //return the square root of 2
+        console.log("The value of math. is :", Math.LN2) //returns the natural algorithm of 2
+        console.log("The value of math. is :", Math.LN10) //reutrn the natural algortitm of 10
+        console.log("The value of math. is :", Math.LOG2E) //returns the base 2 logarithm of E
+        console.log("The value of math. is :", Math.LOG10E) //retunrs the base 10 logarithm of E
+
+        // printing the funcitons from math objects ::: 
+        let a = 34.64534;
+        let b = 89;
+        console.log("The value of a and b is ", a, b)
+        // 1) math round reutrns the nearnest integers:::
+        console.log("The value of a and b is ", Math.round(a), Math.round(b));
+
+        // 2) Math.Pow() funciton squares one number by second : 
+        console.log("3 raised to the power 2 is ", Math.pow(3 , 2))
+        console.log("2 raised to the power 12 is ", Math.pow(2 , 12))
+        console.log("5 raised to the power 7 is ", Math.pow(5 , 7))
+
+        // 3) Math.sqrt() return the square root of a number : 
+        console.log("The square root of 36 is :",Math.sqrt(36))
+        console.log("The square root of 100 is :",Math.sqrt(100))
+        console.log("The square root of 1024 is :",Math.sqrt(1024))
+        console.log("The square root of 64 is :",Math.sqrt(64))
+        console.log("The square root of 50 is :",Math.sqrt(50))
+
+        // 4) Math.ceil() Returns the rounded up to its nearest integer :: 
+        console.log("The math.ceil of 4.9 is : ",Math.ceil(4.9))
+        console.log("The math.ceil of 4.1 is : ",Math.ceil(4.7))
+        console.log("The math.ceil of 10.4 is : ",Math.ceil(10.4))
+        console.log("The math.ceil of -4.2 is : ",Math.ceil(-4.2))
+        
+        // 5) Math.floor(x) returns the  rounded down to its nearest integer:
+        console.log("The math.floor of 4.9 is : ",Math.floor(4.9))
+        console.log("The math.floor of 4.1 is : ",Math.floor(4.7))
+        console.log("The math.floor of 10.4 is : ",Math.floor(10.4))
+        console.log("The math.floor of -4.2 is : ",Math.floor(-4.2))
+        
+        // 6) abs funtion - returns the absolute value : 
+        console.log("Absolute value of 5.66 is : ", Math.abs(5.66))
+        console.log("Absolute value of -5.66 is : ", Math.abs(-5.66)) 
+
+        // 7) Trignometric fucntions :: 
+        console.log("The value of sin(pi) is :", Math.sin(Math.PI))
+        console.log("The value of sin(pi/2) is :", Math.sin(Math.PI/2))
+        
+        console.log("The value of cos(pi) is :", Math.cos(Math.PI))
+        console.log("The value of cos(pi/2) is :", Math.cos(Math.PI/2))
+        
+        console.log("The value of tan(pi) is :", Math.tan(Math.PI))
+        console.log("The value of tan(pi/2) is :", Math.tan(Math.PI/2))
+
+        // 8) Min/max fuctin print the minimum/maximum value : 
+        console.log("The minimum value of 4,5,6,2,8,10 is :", Math.min(4,5,6,2,8,10))
+        console.log("The maximum value of 4,5,6,2,8,10 is :", Math.max(4,5,6,2,8,10))
+        
+        // 9) Math.random : returns the random value : 
+        let r = Math.random();
+        console.log("The random number is ", r)
+        // if we want in b/w 1 and 100 so formla is : 
+        // Random Number b/w (a, b) = a + (b-a)*Math.random() 
+        let a1 = 1;
+        let b1 = 100;
+        let r1_1_100 = a1 + (b1 - a1)*Math.random()
+        console.log("The random number b/w 1 and 100 is :", r1_1_100);
+
+        // 10) Math.clz32() returns the binary number from decimal :: 
+        console.log("the binary number of 7 is :", Math.clz32(32))
+
+
+        let m1 = Math;
+        console.log(m1)
+    </script>
+</body>
+</html>

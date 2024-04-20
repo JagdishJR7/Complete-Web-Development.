@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Event in JS </title>
+
+    <style>
+        #btn{
+            padding: 8px 20px;
+            color: white;
+            background-color: #999;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            border: 1px solid #111;
+        }
+        #btn:hover{
+            color:black;
+            border: 1px solid #111;
+            background-color: #eee;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contetn">
+        <h1>Event in JS </h1>
+        <ul>
+            <li><b>click :</b> </li>
+            <li><b>Contextmenu :</b> </li>
+            <li><b>Mousedown / mouseup :</b></li>
+            <li><b>Mouseover / mouseout :</b> </li>
+            <li><b>Mousemove :</b> </li>
+            <!-- <hr> -->
+            <li><b>submit : </b> </li>
+            <li><b>focus :</b> </li>
+            <li><b>DOMContentLoaded :</b> </li>
+            <li><b>transitioned :</b> </li>
+        </ul>
+    </div>
+
+    <hr>
+    <h2>Making the DOM :</h2>
+
+    <div class="container">
+        <h1>This is my paragraph</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae in nulla dolor sequi voluptate aliquam illum, excepturi cum aut ullam blanditiis vel omnis magnam ducimus illo sed labore voluptates odit. At sunt voluptatem ab eveniet corporis accusantium, reiciendis aliquid esse sapiente quis laborum reprehenderit tenetur totam libero hic veritatis sit amet tempore temporibus soluta doloremque officia nobis? Ipsam earum beatae provident deleniti doloribus debitis, blanditiis excepturi labore consectetur quam perspiciatis id incidunt nobis facere sint nam nesciunt alias exercitationem dolores accusantium ad veritatis temporibus accusamus. Temporibus minus itaque, neque earum enim iusto obcaecati quo consectetur, aspernatur libero dolor nostrum a!</p>
+    </div>
+
+    <button id="btn" onclick="togglehide()">Show/hide</button>
+</body>
+
+<script>
+    // 1) onclick event :: 
+
+    // we have to hide the para when it is showing and show when it is hiding 
+    function togglehide(){
+       let btn = document.getElementById("btn");
+       let para = document.getElementById("para");
+       if (para.style.display != 'none'){
+           para.style.display = 'none';
+        }else{
+            para.style.display = 'block';
+        }
+
+    }
+
+    // 2) mouseover / mouseout evet in js ::
+    let para = document.getElementById("para");
+    para.addEventListener('mouseover', function run(){
+        console.log('mouse Inside')
+    });
+
+    para.addEventListener('mouseout', function run(){
+        console.log('mouse now went outside')
+    });
+
+    for (var i =0; i<10; i++){
+        setTimeout(function(){
+            console.log(i)
+
+        },10 );
+        
+    }
+</script>
+</html>

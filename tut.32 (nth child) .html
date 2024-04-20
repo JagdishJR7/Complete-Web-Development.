@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute and nth child pseudo selectors</title>
+    <style>
+        body{
+            /* background:url('image/Cherry-Blossoms-iPhone-Wallpaper.jpeg'); */
+            background-color: white;
+            color: white;
+        }
+        .container{
+            display: block;
+            width: 100px;
+            margin:auto;
+            /* margin: opx; */
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 20px;
+            border: 2px solid red;
+        }
+        a[target]{
+            font-size: 15px;
+            color: blue;
+            background-color: rgb(225, 225, 249);
+        }
+
+    /* This will aply css for third child  */
+        li:nth-child(3){
+            color:green;
+        }
+
+    /* This will apply css acc to formula  [n=0] */
+        li:nth-child(2n+3){
+            color: rgb(207, 243, 8);
+        }
+
+    /* Odd child  */
+        li:nth-child(odd){
+            color: rgb(118, 37, 231);
+            background-color: rgb(246, 246, 147);
+        }
+
+    /* even child  */
+        li:nth-child(even){
+            color: rgb(38, 0, 255);
+            background-color:rgb(253, 205, 213);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_blank">Go to facebook</a></h1>
+        <form action="" class="form control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter password">
+            <input type="submit" value="submit">
+        </form>
+
+        <ul>
+            <!-- li.item#item$*5 -->
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item5">item6</li>
+            <li class="item" id="item5">item7</li>
+            <li class="item" id="item5">item8</li>
+            <li class="item" id="item5">item9</li>
+            <li class="item" id="item5">item10</li>
+            <li class="item" id="item5">item11</li>
+            <li class="item" id="item5">item12</li>
+            <li class="item" id="item5">item13</li>
+            <li class="item" id="item5">item14</li>
+            <li class="item" id="item5">item15</li>
+        </ul>
+    </div>
+</body>
+</html>

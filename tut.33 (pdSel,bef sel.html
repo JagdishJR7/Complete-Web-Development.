@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pdeudo selector</title>
+    <body>
+        <!-- <h5>jagdish Rathore</h5> -->
+    </body>
+    <style>
+        body {
+            width: 100%;
+            height:100%;
+            background-color:black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("image/102178_hd.jpg")no-repeat center center/cover;
+            background: url("image/102514_hd.jpg")no-repeat center center/cover;
+            background: url("image/21980_uhd.jpg")no-repeat center center/cover;
+            /* background: url("image/33319_uhd.jpg") no-repeat center center/cover; */
+            
+        }
+        header::before{
+            background: url('image/102178_hd.jpg');
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            z-index: -1;
+        } 
+
+        .item:hover {
+            /* border: 2px solid black; */
+            /* color: rgb(10, 1, 0); */
+            cursor: pointer;
+            border: 2px solid rgb(44, 43, 43);
+            box-shadow: 1px 1px 5px 5px black;
+            /* text-decoration: underline rgb(249, 246, 246); */
+        }
+
+        h1:hover {
+            /* color: rgb(16, 14, 14); */
+            box-shadow: 1px 1px 5px 5px black;
+        }
+
+        p:hover {
+            color:rgb(44, 6, 239);
+        }
+
+        .navigation {
+            font-size: 70px;
+            display: flex;
+        }
+
+         .navbar{
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* text-decoration: underline; */
+            font-size:20px;
+            /* border: 2px solid red; */
+            padding: 20px 25px;
+            margin: 10px;
+            /* width: 500px; */
+            height: 80px;
+            text-align: left;
+            /* justify-content: center; */
+
+        }
+
+        .item {
+            border:2px solid black;
+            /* padding: 20px 23px; */
+            padding: 7px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 1px 20px 2px black;
+            /* text-decoration: underline rgb(105, 102, 102); */
+            /* box-shadow:right bot ; */
+            margin: 2px;
+            display: inline-block;
+            /* list-style:circle; */
+
+        }
+
+        section {
+            /* background: url("image/21980_uhd.jpg")no-repeat center center/cover; */
+            /* opacity: 0.2; */
+            box-shadow: 0px 0px 20px 20px black;
+            height: 398px;
+            margin: 3px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            color: black;
+            /* background: url("image/21980_uhd.jpg")no-repeat center center/cover; */
+            /* background-color: rgb(203, 188, 187); */
+            font-size: 4rem;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* section::before {
+            font-family: 'Courier New', Courier, monospace;
+            content: "this is  new content";
+        } */
+
+        section::after {
+            font-family: 'Courier New', Courier, monospace;
+            content: "this is  new content";
+            /* color:blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome To CodingWorld</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ab accusantium incidunt explicabo,
+            tenetur voluptatibus optio ea facere! Dicta sint qui dolor, beatae porro illo amet voluptates obcaecati
+            consequatur molestias at dolorum sit minus?</p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>

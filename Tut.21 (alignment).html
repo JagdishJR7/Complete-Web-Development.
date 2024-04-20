@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(248, 227, 199)
+        }
+
+
+        .container {
+            color: #3c4043;
+            width: 900px;
+            border: 3px solid rgb(248, 163, 155);
+            background-color: rgb(244, 177, 177);
+            margin: 33px auto;
+        }
+
+        /* .container {
+
+            color: #3c4043;
+            cursor: pointer;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: .2px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        
+        } */
+        .para:hover{
+            color:black;
+        }
+        .item {
+            border: 3px solid rgb(244, 139, 139);
+            margin: 12px 7px;
+            padding: 2px 12px;
+            background-color: antiquewhite;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            width: 98%;
+        }
+
+        
+        h3 {
+
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            /* text-align: justify; */
+            text-decoration: underline;
+
+        }
+
+        h1 {
+            width: 50%;
+            margin: 23px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome To MyStore</h2>
+            <div id="fruits" class="item">
+                <h3>Fruits</h3>
+                <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa
+                    ab, distinctio corrupti eaque blanditiis sapiente adipisci dolores architecto rem
+                    vel,container,,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio magni, porro,
+                    amet culpa delectus mollitia vitae possimus facere natus odit in, dignissimos asperiores? Officiis
+                    eum exercitationem libero natus, a fugiat, pariatur cumque sequi commodi quod quasi necessitatibus
+                    iste nihil voluptatibus tempora esse reiciendis molestias dolorum. Pariatur sunt consectetur tempore
+                    ea illo fuga illum a, ex ullam?</p>
+            </div>
+
+            <div id="computer" class="item">
+                <h3>Computer</h3>
+                <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa
+                    ab, distinctio corrupti eaque blanditiis sapiente adipisci dolores architecto rem vel, illo
+                    facilis.,,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, quam.,Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Eligendi animi asperiores eos commodi optio porro itaque
+                    inventore, tenetur quo modi nulla delectus voluptate dolore eveniet dignissimos, similique
+                    distinctio cupiditate ipsa quas quam molestiae, vero tempore recusandae! Possimus facilis officia
+                    laborum debitis, volup
+
+                </p>
+            </div>
+            <div id="stationary" class="item">
+                <h3>Stationary</h3>
+                <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+                    culpa ab, distinctio corrupti eaque blanditiis sapiente adipisci dolores architecto rem vel, illo
+                    facilis.,,Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fuga earum, quo
+                    voluptate dolorem et ex ut ipsa placeat soluta magnam magni eius consequatur ullam non perspiciatis
+                    reiciendis id alias assumenda nulla pariatur! Harum iste, quaerat doloremque ratione nobis veritatis
+                    nemo quae consequatur, quisquam dolorem fugit et saepe veniam? Nesciunt, expedita nisi tempora minus
+                    voluptate temporibus!</p>
+            </div>
+            <div id="standard" class="item">
+                <h3>Standard</h3>
+                <p id="standardpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa
+                    ab, distinctio corrupti eaque blanditiis sapiente adipisci dolores architecto rem vel, illo
+                    facilis.,,Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fuga earum, quo
+                    voluptate dolorem et ex ut ipsa placeat soluta magnam magni eius consequatur ullam non perspiciatis
+                    reiciendis id alias assumenda nulla pariatur! Harum iste, quaerat doloremque ratione nobis veritatis
+                    nemo quae consequatur, quisquam dolorem fugit et saepe veniam? Nesciunt, expedita nisi tempora minus
+                    voluptate temporibus!</p>
+            </div>
+    </div>
+</body>
+
+</html>

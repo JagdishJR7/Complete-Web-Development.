@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on slector</title>
+</head>
+<style>
+    body{
+        background-color: rgb(21, 4, 4);
+    }
+    .container{
+        background-color: black;
+        color: white;
+        border: 2px solid red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* font-size: 75px; */
+    }
+    h1 {
+        width: 95%;
+        color: rgb(0, 31, 31);
+        background-color: rgb(98, 85, 85);
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        justify-content: center;
+        border: 2px solid black;
+        margin: 10px;
+        /* left:50px; */
+        /* top: 10px; */
+        padding: 25px;
+        border-radius: 100px;
+
+    }
+
+    /* p which is inside the ul  */
+
+    div p {
+        color: rgb(12, 12, 14);
+        font-size: 25px;
+        background-color: rgb(189, 240, 189);
+        /* margin: 10px; */
+        /* width: 100px; */
+    }
+
+    /* para p which comes in li     */
+    div li p {
+        color: rgb(28, 11, 181);
+        font-size: 25px;
+        background-color: greenyellow;
+    }
+
+    /* if li conatined inside the div  */
+    div li {
+        color: rgb(230, 69, 6);
+        font-size: 25px;
+        background-color: yellow;
+    }
+
+    /* if p is right inside div  */
+    div>p {
+        color: rgb(61, 12, 241);
+        border: 2px solid rgb(66, 25, 25);
+        background-color: whitesmoke;
+        font-size: 25px;
+        width: 300px;
+    }
+
+    /* if p is right after div / p is next sibling of div  */
+    div+p {
+        color: rgb(245, 21, 21);
+        background-color: rgb(6, 6, 6);
+    }
+    p{
+        width: 400px;
+        font-size: 30px;
+        border: 2px solid rgb(18, 17, 17);
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>There is MoreSlecttor</h1>
+        <!-- <div class="container"> -->
+            <div class="row">
+                <ul>
+                    <li class="item">
+                        <p>this is another paragraph inside the li</p>
+                    </li>
+                    <li>this will get not affected</li>
+                    <p>this is paragraph inside the ul</p>
+                </ul>
+                <p>this is another paragraph</p>
+            </div>
+            <p>this is a inner paragraph</p>
+        <!-- </div> -->
+    </div>
+    <p>this is a outermost paragraph</p>
+</body>
+
+</html>

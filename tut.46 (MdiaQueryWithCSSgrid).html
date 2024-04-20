@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries with CSS grid</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section  aside'
+                'footer footer footer footer ';
+        }
+
+        @media (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+
+            aside {
+                display: none;
+            }
+
+        }
+
+        @media (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside '
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span,
+            li {
+                display: block;
+                text-align: center;
+            }
+
+
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: rgb(156, 234, 253);
+                box-shadow: 1px 5px 10px 1px rgb(126, 209, 209);
+            }
+
+            .container {
+                grid-template-areas:
+                    ' navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside '
+                    'footer footer footer footer ';
+            }
+
+            span,
+            li {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width: 800px) and (max-width:1000px) {
+            body {
+                background-color: rgb(200, 232, 94);
+            }
+
+            span,
+            li {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width: 1000px) {
+            body {
+                background-color: rgb(197, 216, 224);
+            }
+
+            span,
+            li {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        .bdr {
+            /* text-decoration: underline; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* font-size: 5px; */
+            border: 3px solid  rgb(104, 172, 172);
+            box-shadow: 2px 1px 15px 10px rgb(101, 144, 144);
+            border-radius: 10px;
+            padding: 23px;
+            background-color: rgb(178, 219, 219);
+        }
+
+        nav,
+        ol {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+            /* text-decoration: underline; */
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        h2,h1{
+            text-decoration: underline;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <!-- <nav class="bdr">
+                <span>Home</span>
+                <span>About</span>
+                <span>services</span>
+                <span>Contact</span>
+            </nav> -->
+            <ol class="bdr" type="A">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ol>
+            <section class="bdr">
+                <h2>Learn CSS Practically</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vero atque deleniti natus quo dolores
+                    provident. Molestiae cupiditate dolores necessitatibus similique, recusandae error numquam quo
+                    excepturi quasi impedit perferendis ut est aut quis repellendus a temporibus fugiat voluptatem ex
+                    facere ipsam corporis. Vitae, quibusdam facilis odio, tenetur quam error labore accusantium
+                    accusamus minima, dolore nihil repellat. Quod architecto fugiat tempore possimus nemo perspiciatis
+                    aut alias placeat expedita quas, repudiandae similique perferendis minima ipsa obcaecati quo
+                    mollitia, commodi accusamus suscipit dignissimos ea! Sequi expedita quo commodi ducimus amet
+                    corporis deserunt alias aut quod soluta atque molestias velit magni nobis sint dolor animi esse
+                    voluptatibus maiores iste veniam, sunt ipsum placeat. Totam, ipsam adipisci quia officia eveniet
+                    nulla saepe blanditiis iure cupiditate cum inventore asperiores itaque incidunt voluptate ut,
+                    provident, beatae sint culpa enim. Tempora, animi consectetur. Harum labore quo laborum sunt
+                    consectetur cupiditate? Maxime porro consequuntur consequatur aut impedit? Rerum nihil facere
+                    excepturi odio, commodi possimus eum veritatis vero quasi doloremque ab voluptates quibusdam error
+                    iste enim obcaecati, dolorem molestiae omnis perferendis accusamus, voluptatibus est debitis quo
+                    ipsum. Modi, dolore nam, atque non adipisci rem harum quibusdam illum a corrupti fugit quas
+                    doloribus incidunt vel numquam qui aspernatur odit facilis dolores?</p>
+            </section>
+            <aside class="bdr">
+                <h1>More About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nesciunt expedita amet sed
+                    voluptatibus eligendi totam, animi non assumenda quam magni delectus voluptate voluptates
+                    perferendis.</p>
+            </aside>
+
+        </div>
+        <footer class="bdr">
+            <b>
+                Copy the code with codewitherry 2022.
+            </b>
+        </footer>
+    </body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Arrow Function :</h1>
+        <ul>
+            <h3>- Arrow Functions allow us to write shorter function suntax.</h3>
+        </ul>
+    </div>
+
+
+    <script>
+        let myFucntion = (a,b) => a*b;
+        TML = myFucntion(52,26);
+        console.log(TML)
+
+        // -----
+        function greet(){
+            console.log("Hello world");
+        }
+        greet();
+
+        // Shortcut method Arrow function ----
+        greet = () => {
+            console.log("Good Morning.")
+        }
+        greet();
+        
+        // If we want to print after 3 second -----
+        setTimeout(() => {
+            console.log("We are isnide setTimeout.")
+        }, 3000);
+        
+
+        // for adding number ::: ----
+        let sum = (a,b) =>{
+            console.log("The sum of a and b is :", a+b);
+            return a+b;
+        }
+        sum(23,45);
+
+        // in simple way using "arrow funciton" -----
+        let sum1 = (a,b) => a + b;
+        let half = a => a/2;
+        let greet1 = () => console.log("Again Good Morning.");
+        greet1();
+
+        // speak fucntion/Argument in js :: 
+        let obj1 ={
+            greeting : "Good Morning",
+            names:["Harry","Jacky","Aman","Rahul"],
+            speak(){
+                this.names.forEach((students) =>{  
+                    console.log(this.greeting + ' ' + students)
+                    //Arrow function mai ye this greeeting wala hoga ! 
+                    // magar ham fucntion use karenge toh ko ussme ye hni hoga !
+                    // this.names.forEach(function = (students){  
+                })
+            }
+        }
+        obj1.speak();
+
+    </script>
+</body>
+</html>

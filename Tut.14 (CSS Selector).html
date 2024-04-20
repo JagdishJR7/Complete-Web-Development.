@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        /* Element Selector */
+        p{
+            border: 2px solid rgb(7, 7, 7);
+            width: 350px;
+            border-radius: 5px;
+        }
+
+        /* id selector */
+        #firstPara {
+            color: rgb(9, 222, 245);
+            background-color: rgb(162, 149, 149);
+            border:2px solid rgb(9, 222, 245);
+            font-size: 25px;
+            width: 520px;
+            padding: 15px 10px;
+
+            
+        }
+
+        
+        #redElement {
+            font-size: 25px;
+            /* margin: 10px; */
+            padding: 15px 10px;
+            width: 520px;
+            color:rgb(240, 185, 185);
+            border:2px solid  rgb(240, 185, 185);
+            background-color: black;
+        }
+
+
+         /* Class selector */
+         .bgblue {
+            color: rgba(5, 169, 5, 0.533);
+            background-color: blue
+        }
+
+        /* Grooping selector */
+         footer, span{
+            background-color: aquamarine;
+            color: aqua;
+        
+         }
+        .c-1{
+            color: rgb(228, 13, 17);
+            border:2px solid  rgb(228, 13, 17);
+            background-color: rgb(118, 115, 115);
+            font-size: 25px;
+            width: 580px;
+            padding: 15px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS! selector</h1>
+    <hr>
+    <hr>
+    <p id="firstPara">This is a simple selectorto demostrate css selector</p>
+    <p id="redElement" class="bgblue">This is a simple selectorto demostrate css selector</p>
+    <div>
+        <p class="c-1">This is a simple paragraph inside demostrate css selector</p>
+    </div>
+</body>
+
+</html>

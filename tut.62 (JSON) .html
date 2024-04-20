@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>JSON ::</h1>
+        <ul>
+            <li><h2>JSON stands for "Java Script Ojects Notations." </h2></li>
+            <li><h2>We will use it for 'transporting' data from JS.</h2></li>
+        </ul>
+    </div>
+
+    <script>
+        let jsonObj = {
+            name : "Harry",
+            channel : "CWH",
+            friend : "Rohan Das",
+            food : "bhindi"
+        }
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr)
+
+        // replace a value : 
+        myJsonStr = myJsonStr.replace("Harry","Karry");
+        console.log(myJsonStr)
+
+        // if we again want to reverse it into objects 
+        let NewmyJsonStr = JSON.parse(myJsonStr)
+        console.log(NewmyJsonStr);
+    </script>
+</body>
+</html>

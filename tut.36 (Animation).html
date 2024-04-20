@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: rgb(237, 186, 186);
+        }
+
+        .div {
+            width: 600px;
+        }
+
+        .container {
+            background-color: rgb(94, 40, 40);
+            color: black;
+
+        }
+
+
+        .box {
+            background-color: green;
+            border-radius: 25px;
+            padding: 5px;
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: harry1; */
+            animation-name: harry2,harry3;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /*counting*/
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* this properties can be set using this sort hand  */
+
+            /* animation: animation-name animation-duration animation-iteration-count animation-fill-mode animation-timing-function animation-delay animation-dirction  ; */
+            /* animation: harry2 3s 3 alternate ease-in 3s reverse; */
+        }
+
+        @keyframes harry2 {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: yellow;
+                color: white;
+                font-size: 55px;
+                border-radius: 15px;
+
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+                background-color: blue;
+                color: rgb(253, 251, 251);
+                font-size: 45px;
+                border-radius: 25px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+                background-color: white;
+                color: black;
+                font-size: 35px;
+                border-radius: 15px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+                background-color: red;
+                color: white;
+                font-size: 25px;
+                border-radius: 15px;
+
+            }
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+      
+
+    </div>
+</body>
+
+</html>

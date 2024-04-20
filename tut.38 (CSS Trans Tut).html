@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform tutorial</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px 15px;
+        }
+        .container{
+            border-radius: 25px;
+            border: 5px solid green;
+            background-color:rgb(208, 253, 116);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:red;
+            /* border: 4px solid rgb(10, 231, 58); */
+            height: 200px;
+            width: 200px;
+            transition: all 0.2s ease-in-out ;
+        }
+
+        .box:hover{
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(2);
+            transform: translatex(123px);
+            transform: translatey(123px);
+            transform: translate(123px , 123px);
+        }
+
+        body {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>This is css transform tutorial which help in animation</h3> -->
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html

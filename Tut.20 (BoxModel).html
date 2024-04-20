@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 34px auto;
+            padding:2px;
+
+        }
+
+        body {
+            background-color: rgb(223, 213, 254);
+        }
+
+        .container {
+            background-color: rgb(208, 169, 245);
+            border: 12px solid rgb(211, 183, 183);
+
+            /* we can set margin/padding for top bottom and left and right like this */
+
+            /* padding-top: 78px;
+            padding-bottom: 89px;
+            padding-left: 79px;  */
+           
+            /* margin-top: 8px;
+            margin-bottom: 2px;
+            margin-left: 5px;
+            margin-right: 2px; */
+
+            /* padding: 34px 26px 67px 76px; */
+            /*padding :top right bottom left */
+
+            /*padding y(top/bottom) x(left/right) */
+            padding: 79px;
+            margin: 0, 14px, 0, 15px;
+            border-radius: 23px;
+            width: 785px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci architecto suscipit, placeat
+            dicta,
+            aspernatur debitis quaerat officia illum sapiente maiores nobis eaque perferendis.</p>
+    </div>
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci architecto suscipit, placeat
+            dicta, aspernatur debitis quaerat officia illum sapiente maiores nobis eaque perferendis.</p>
+    </div>
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci architecto suscipit, placeat
+            dicta,
+            aspernatur debitis quaerat officia illum sapiente maiores nobis eaque perferendis.</p>
+    </div>
+</body>
+
+</html>

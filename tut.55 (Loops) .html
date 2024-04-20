@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in JS.</title>
+
+</head>
+
+<body>
+    <div class="contetn">
+        <h1>Loops in JS ::</h1>
+        <ul>
+            <li>
+                <h3>For loop : To iterate array element , we can use for loop.</h3>
+            </li>
+            <li>
+                <h3>ForEach loop : it is more easy way to use for loop than simple for loop.</h3>
+            </li>
+            <li>
+                <h3>For of loop : it is also a another way to use for loop which is faster and has less code.</h3>
+            </li>
+            <li>
+                <h3>for in loop : to iterate objects in JS, means to iterate the keys in array or object.</h3>
+            </li>
+            <li>
+                <h3>while loop : this is same as for.</h3>
+            </li>
+            <li>
+                <h3>Do while loop : it runs for atleast once.</h3>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    // For loop :::::: 
+    // let i = 0;
+    // for(i=0; i<3; i++){
+    //     console.log(i);
+    // }
+
+    // another example for loop ;
+    let friends = ["Rohan", "Sanjeev", 'Pankaj', 'Jai', 'Raj', 'Pooja']
+    // for (let index = 0; index < friends.length; index++) {
+    //     // console.log(friends[index]);
+    //     console.log("Hello",friends[index]);
+    // }
+
+
+    // forEach loop ::::
+    // we can also print it using forEach which has less code to write . 
+    // friends.forEach(function f(element){
+    //     console.log("hello, " + element + "To modern JS.");
+    // });
+
+    // for making more easy we can also use 
+    // for of loop ::::: 
+    // for (const element of friends) {
+    //     console.log("hello, " + element+ " To modern JS.")
+    // }
+
+    let employee = {
+        name: "harry",
+        salary: 2,
+        channel: "char"
+    }
+    for (key in employee) {
+        //     console.log(`the $(key) of employee is $(employee[key])`);
+        console.log('The', key, 'of employee is', employee[key]);
+    }
+
+    // while loop in JS :::: 
+
+    let i = 0;
+    while (i < 4) {
+        // console.log(`the value of $(i) is less than 4`);
+        console.log('the value of', i, 'is less than 4');
+        i++;
+    }
+
+
+    // do while loop :::: 
+    let j = 34;
+    do {
+        // console.log(`the value of $(i) is less than 4`);
+        console.log('the value of', j, 'is less than 34, bec we are inside the do while loop.');
+        j++;
+    }
+    while (i < 2);
+
+</script>
+
+</html>

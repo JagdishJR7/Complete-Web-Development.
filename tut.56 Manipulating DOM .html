@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1 style="text-decoration: underline">DOM Understanding :</h1>
+        <ul>
+            <ol>
+                <li>
+                    <h4>Document Object Model</h3>
+                </li>
+                <li>
+                    <h4>
+                        The page that we creates in HTML is DOM and which loaded into the
+                        web page.
+                    </h4>
+                </li>
+
+                <li>
+                    <h3>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</h3>
+                </li>
+                <ul>
+                    <li>JavaScript can change all the HTML elements in the page</li>
+                    <li>JavaScript can change all the HTML attributes in the page</li>
+                    <li>JavaScript can change all the CSS styles in the page</li>
+                    <li>JavaScript can remove existing HTML elements and attributes</li>
+                    <li>JavaScript can add new HTML elements and attributes</li>
+                    <li>JavaScript can react to all existing HTML events in the page</li>
+                    <li>JavaScript can create new HTML events in the page</li>
+                </ul>
+            </ol>
+        </ul>
+    </div>
+    <hr />
+
+    <h2>For manipulating DOM by ID-</h2>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <hr />
+
+    <h2>For manipulating DOM by using Classes-</h2>
+    <div class="container">another container</div>
+</body>
+
+
+<script>
+    let main = document.getElementById("main");
+    console.log(main);
+
+    let nav = document.getElementById("nav");
+    console.log(nav);
+
+    let containers = document.getElementsByClassName("container");
+    console.log(containers);
+
+    // we can use selector as well but it selects first occurance of the class
+    let sel = document.querySelector(".container");
+    console.log("Selected returns of class:", sel);
+
+    let sel1 = document.querySelector("#nav");
+    console.log("Selected returns of id:", sel1);
+
+    // for getting first we can use ::
+    let sel2 = document.querySelector("#nav>li");
+    console.log("Selected returns of id:", sel2);
+
+    // another query selector all :
+    let sel3 = document.querySelectorAll("#nav>li");
+    console.log("Selected returns of id:", sel3);
+</script>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS date </title>
+
+    <style>
+        .content{
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        this is container .
+    </div>
+
+    <h1>Note</h1>
+    <ul>
+        <li>
+            <h3>JavaScript counts months from 0 to 11:</h3>
+        </li>
+        <li>
+            <h3>January = 0.</h3>
+        </li>
+        <li>
+            <h3>December = 11.</h3>
+        </li>
+    </ul>
+
+    <h2>We can change the date as well : </h2>
+    <ul>
+        <li>
+            <h3> By set date function
+            </h3>
+        </li>
+    </ul>
+    <div class="content">
+        Current Time is : <span id="time">
+    </div>
+
+
+    </span>
+
+    <script>
+        console.log("this is data time tutorial ");
+
+
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+
+        // let NewDate = new Date("2029-09-12")
+        // console.log(NewDate);
+
+        // let NewDate = new Date(year,month,date,hours,minutes,millisecond)
+        let NewDate = new Date(2032, 08, 11, 9, 12, 25, 60)  //Indexes starts from 0 in month parameter so septumber will be the month 
+        console.log(NewDate);
+
+
+        // now functions in the js 
+        let yr = NewDate.getFullYear();
+        console.log("The year is :", yr)
+
+        let mt = NewDate.getMonth();
+        console.log("The month is :", mt);
+
+        let min = NewDate.getMinutes();
+        console.log("The minutes is :", min)
+
+        let milli = NewDate.getMilliseconds();
+        console.log("The milliseconds is :", milli);
+
+
+
+        // we can also get date in string . 
+        const d = new Date();
+        // d.toString();
+        console.log(d.toString());
+
+        // d.toDateString();
+        console.log(d.toDateString());
+
+        // Landon time zone :::: 
+        console.log(d.toUTCString());
+
+        // The toISOString() method converts a date to a string using the ISO standard:
+        // Indian Time ::: 
+        console.log(d.toISOString())
+
+
+        // we can change the date as well ::::: 
+        // By set date function 
+
+        NewDate.setDate(2);
+        NewDate.setDate(32);  //it will correct autometically
+        NewDate.setMinutes(23);
+        console.log(NewDate);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        };
+    </script>
+
+</body>
+
+</html>
